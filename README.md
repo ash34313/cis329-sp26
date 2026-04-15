@@ -15,5 +15,6 @@ ExpressJS + MongoDB + ReactJS
 - `sudo chown -R mongodb:mongodb /var/lib/mongodb`
 - `sudo chown -R mongodb:mongodb /var/log/mongodb`
 - `sudo mongod --config /etc/mongod.conf --fork`
-- Test if the mongodb is running: `ps aux | grep mongod`
+- Test if the mongodb is running: 
+   - `ps aux | grep mongod`
 - `sudo ss -tulpn | grep mongod`

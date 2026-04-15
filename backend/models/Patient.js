@@ -7,6 +7,7 @@ const PatientSchema = new mongoose.Schema({
     email: {type: String, required: true, unique: true, lowercase:true},
     password: {type: String, required: true},
     phone: {type:Number, required: true},
+    medicalHistory: {type: String, required: true},
     assignedDoctor: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Doctor',
@@ -14,4 +15,5 @@ const PatientSchema = new mongoose.Schema({
     },
     createdAt: {type:Date, default:Date.now}
 })
+
 module.exports = mongoose.model('Patient', patientSchema)
